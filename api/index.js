@@ -9,8 +9,7 @@ import usersRoute from "./routes/users.js"
 import flightsRoute from "./routes/flights.js"
 import carsRoute from "./routes/cars.js"
 import cookieParser from "cookie-parser"
-
-const path = require("path")
+import * as path from 'path';
 
 const port = process.env.PORT || 8800
 
