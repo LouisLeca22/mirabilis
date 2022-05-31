@@ -9,7 +9,11 @@ import usersRoute from "./routes/users.js"
 import flightsRoute from "./routes/flights.js"
 import carsRoute from "./routes/cars.js"
 import cookieParser from "cookie-parser"
-import * as path from "path"
+import path from "path"
+import {fileURLToPath} from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 const port = process.env.PORT || 8800
 
 
