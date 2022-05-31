@@ -40,7 +40,7 @@
 
 @media screen and (max-width: 700px){
     .navbar{
-        height: 100px;
+        height: auto;
     }
     .navContainer{
         flex-direction: column;
