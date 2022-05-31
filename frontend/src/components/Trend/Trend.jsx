@@ -9,7 +9,7 @@ function Trend() {
 
   return (
     <div className="trend">
-      {loading ? <Loading /> : (data.map(item => (
+      {loading ? <Loading /> : (data && data.map(item => (
 
        <Link to={`/hotels/${item._id}`} className="trendItem" key={item._id}>
          <img
