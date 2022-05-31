@@ -1,5 +1,4 @@
 import express from "express"
-import path from "path"
 import dotenv from "dotenv"
 dotenv.config()
 import mongoose from "mongoose"
@@ -10,6 +9,8 @@ import usersRoute from "./routes/users.js"
 import flightsRoute from "./routes/flights.js"
 import carsRoute from "./routes/cars.js"
 import cookieParser from "cookie-parser"
+
+const path = require("path")
 
 const port = process.env.PORT || 8800
 
