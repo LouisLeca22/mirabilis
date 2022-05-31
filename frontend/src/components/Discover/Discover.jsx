@@ -59,7 +59,7 @@ const Discover = () => {
         />
         <div className="pListTitles">
           <h1>Resorts</h1>
-          <h2>{data[2].number} resorts</h2>
+          <h2>2399 resorts</h2>
         </div>
       </div>
       <div className="pListItem" onClick={() => {
