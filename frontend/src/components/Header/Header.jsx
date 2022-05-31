@@ -1,8 +1,8 @@
 import { faBed, faCar, faPlane } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {useEffect, useState} from "react";
+import {useState} from "react";
 import HomeSearch from "../HomeSearch/HomeSearch";
-import useFetch from "../../hooks/useFetch"
+
 
 import "./header.css";
 import { useLocation, useNavigate } from "react-router-dom";

@@ -18,7 +18,7 @@ function List({ type }) {
   const [min, setMin] = useState(40)
   const [max, setMax] = useState(9000)
 
-  const url = category ? `/${type}?city=${destination}&min=${min}&max=${max}&from=${from}&type=${category}` : `/${type}?city=${destination}&min=${min}&max=${max}&from=${from}`
+  const url = category ? `/api/${type}?city=${destination}&min=${min}&max=${max}&from=${from}&type=${category}` : `/api/${type}?city=${destination}&min=${min}&max=${max}&from=${from}`
   
   const {data, loading, error, reFetch} = useFetch(url, {}, type)
 

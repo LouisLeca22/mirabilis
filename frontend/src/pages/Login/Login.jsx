@@ -20,7 +20,7 @@ function Login() {
     const handleLogin = async () => {
         dispatch({type: "LOGIN_START"})
         try {
-            const res = await fetch("/auth/login", {
+            const res = await fetch("/api/auth/login", {
                 method: "POST",
                 headers: {"Content-Type": "application/json"},
                 body: JSON.stringify({name: credentials.username, password: credentials.password})

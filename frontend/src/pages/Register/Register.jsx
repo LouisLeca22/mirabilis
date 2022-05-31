@@ -19,7 +19,7 @@ function Register() {
 
     const handleRegister = async () => {
       try {
-        const res = await fetch("/auth/register", {
+        const res = await fetch("/api/auth/register", {
           method: "POST",
           headers: {"Content-Type": "application/json"},
           body: JSON.stringify({name: credentials.username, email: credentials.email, password: credentials.password})

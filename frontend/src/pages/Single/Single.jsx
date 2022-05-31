@@ -57,7 +57,7 @@ function Single({ type }) {
     }
   };
 
-  const { data, loading, error } = useFetch(`/${type}/find/${id}`);
+  const { data, loading, error } = useFetch(`/api/${type}/find/${id}`);
   const { destination, dates, options } = useContext(SearchContext);
   const { user } = useContext(AuthContext);
 

@@ -9,7 +9,7 @@ const Featured = () => {
   const navigate = useNavigate()
   const {dispatch} = useContext(SearchContext)
   
-  const {data, loading, error} = useFetch("/hotels/countByCity?cities=Paris,Madrid,Rome", {})
+  const {data, loading, error} = useFetch("/api/hotels/countByCity?cities=Paris,Madrid,Rome", {})
 
 
   return (

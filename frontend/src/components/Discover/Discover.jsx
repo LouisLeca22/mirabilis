@@ -7,7 +7,7 @@ import "./discover.css";
 
 const Discover = () => {
 
-  const {data, loading, error} = useFetch("/hotels/countByType", {})
+  const {data, loading, error} = useFetch("/api/hotels/countByType", {})
   const navigate = useNavigate()
   const {dispatch} = useContext(SearchContext)
 

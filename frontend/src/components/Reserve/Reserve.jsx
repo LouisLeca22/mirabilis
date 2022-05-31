@@ -46,7 +46,7 @@ function Reserve({setModal, ressourceId}) {
   const handleClick = async () => {
     try {
       const array = await Promise.all(selectedRooms.map(roomId => {
-        const res =  fetch(`/rooms/availability/${roomId}`, {
+        const res =  fetch(`/api/rooms/availability/${roomId}`, {
           method: "PUT",
           headers: {"Content-Type": "application/json"},
           body: JSON.stringify({dates: allDates})

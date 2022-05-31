@@ -97,7 +97,7 @@ function HomeSearch({ kind }) {
   const [possibilities, setPossibilities] = useState([]);
   const [possibilitiesFrom, setPossibilitiesFrom] = useState([])
 
-  const { data } = useFetch(`/${kind}`);
+  const { data } = useFetch(`/api/${kind}`);
 
   
 
