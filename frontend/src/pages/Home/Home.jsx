@@ -9,7 +9,7 @@ import Footer from "../../components/Footer/Footer";
 
 function Home() {
   return (
-    <div>
+    <div style={{width: "100%"}}>
       <Navbar />
       <Header />
       <div className="homeContainer">

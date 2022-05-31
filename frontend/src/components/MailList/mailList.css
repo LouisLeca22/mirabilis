@@ -1,6 +1,5 @@
 
 .mail{
-    width: 100vw;
     margin-top: 50px;
     background-color: #febb02;
     color: #003580;
@@ -9,6 +8,7 @@
     align-items: center;
     gap: 20px;
     padding: 50px;
+    width: 100%;
   }
   
   .mailInputContainer>input{
@@ -28,4 +28,15 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 700px) {
+    .mailInputContainer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .mailInputContainer > button{
+      margin-top: 6%;
+    }
   }

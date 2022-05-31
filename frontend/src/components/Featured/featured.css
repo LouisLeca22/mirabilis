@@ -1,9 +1,9 @@
 .featured{
     width: 100%;
-    max-width: 1024px;
     display: flex;
+    max-width: 1024px;
     justify-content: space-between;
-    gap: 20px;
+    gap: 2%;
     z-index: 1;
 }
 
@@ -26,4 +26,14 @@
      bottom: 15%;
      position: absolute;
      left: 20px;
+}
+
+@media screen and (max-width: 700px){
+    .featured{
+        flex-direction: column;
+    }
+
+    .featuredItem{
+        margin-top: 2%;
+    }
 }

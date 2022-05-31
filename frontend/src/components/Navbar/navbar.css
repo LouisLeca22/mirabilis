@@ -37,3 +37,12 @@
     font-size: 1rem;
     background-color: white;
 }
+
+@media screen and (max-width: 700px){
+    .navbar{
+        height: 100px;
+    }
+    .navContainer{
+        flex-direction: column;
+    }
+}

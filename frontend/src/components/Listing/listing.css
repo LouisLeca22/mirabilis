@@ -108,3 +108,14 @@
     cursor: pointer;
     border-radius: 5px;
   }
+
+  @media screen and (max-width: 700px) {
+    .listing{
+      flex-direction: column;
+      
+    }
+
+    .listingImg{
+      width: 100%
+    }
+  }

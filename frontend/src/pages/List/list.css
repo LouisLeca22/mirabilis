@@ -6,7 +6,6 @@
   }
   
   .listWrapper {
-
     width: 100%;
     max-width: 1440px;
     display: flex;
@@ -83,4 +82,10 @@
   
   .listResult {
     flex: 3;
+  }
+
+  @media screen and (max-width: 700px){
+    .listSearch{
+      display: none;
+    }
   }

@@ -1,9 +1,9 @@
 .trend {
     width: 100%;
-    max-width: 1024px;
     display: flex;
     justify-content: space-between;
-    gap: 20px;
+    gap: 2%;
+    max-width: 1024px;
   }
   
   .trendItem{
@@ -44,4 +44,23 @@
   
   .trendRating>span{
     font-size: 14px;
+  }
+
+  @media screen and (max-width: 700px){
+      .trend{
+        flex-direction: column;
+      }
+      .trendItem{
+        margin-top: 2%;
+      }
+      .trendCity{
+        display: none;
+      }
+      .trendPrice{
+        display: none;
+      }
+
+      .trendRating{
+        display: none
+      }
   }

@@ -13,7 +13,7 @@ function Reserve({setModal, ressourceId}) {
   const type = location.pathname.split("/")[1]
   const [selectedRooms, setSelectedRooms] = useState([])
 
-  const {data, loading, error} = useFetch(`/${type}/rooms/${ressourceId}`)
+  const {data, loading, error} = useFetch(`/api/${type}/rooms/${ressourceId}`)
   const {dates} = useContext(SearchContext)
   const [success, setSuccess] = useState(null)
 
